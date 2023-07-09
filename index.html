@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.reddit.com/search">
+        <label for="search">Redit'te ara:</label>
+        <input type="text" id="search" name="q">
+        <button>search</button>
+    </form>
+<hr>
+
+<form action="https://www.google.com.tr/search">
+<label for="search2">Google'da ara:</label>
+
+<input type="text" id="search2" name="q">
+<button>search</button>
+</form>
+<hr>
+<form action=https://www.youtube.com/results>
+    <label for="search_query">Youtube'da ara:</label>
+    
+    <input type="text" id="search_query" name="search_query">
+    <button>search</button>
+    </form>
+
+    <hr>
+
+    <form action="/birds">
+        <input type="checkbox" name="tos" id="agree" checked />
+        <label for="agree">kabul ediyorum</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs"  value="xs">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+        </p>
+        <p>
+            <label for="animal">favori Hayvanınızı Seçiniz</label>
+            <select name="animal" id="animal">
+                <option value="balik">seçiniz</option>
+                <option value="fish">balık</option>
+                <option value="elephant" selected>fil</option>  kedi seçili olarak gelir
+                <option value="dankey">maymun</option>
+                <option value="dog">köpek</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">peynir miktarı:</label>
+            <input type="range" name="range" id="cheese" min="1" max="10" step="2" value="3"> step kaçar kaçar artacağını gösterir. value kaçtan başlayacağını 
+        </p>
+        <p><label for="number">Sayı giriniz</label>
+            <input type="number" name="number" id="number" min="1" max="10"></p>
+        
+            <p>
+                <p><label for="text">özel istek:</label><br>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Buraya bir şeyler yazınız..."></textarea></p>
+            </p>
+
+            <button>yolla</button>
+    </form>
+
+    <h2>validations</h2>
+    <form action="/spare">
+        <label for="firstName">Kullanıcı adı:</label>
+        <input type="text" id="firstName" name="firstName" required minlength="5" maxlength="15">
+        <p>
+            <input type="url">
+        </p>
+        <button>submit</button>
+    </form>
+    
+
+
+</body>
+</html>
+
